@@ -1,0 +1,85 @@
+{
+  "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+  "revision": "8e7e5af5983a0ddb1a5b45a38b129ab69e2258e8",
+  "device": "mps",
+  "label2id": {
+    "entailment": 0,
+    "not_entailment": 1
+  },
+  "hypotheses": {
+    "topic": {
+      "access": [
+        "The user mentions a problem with login.",
+        "The user mentions account signup.",
+        "The user mentions a password."
+      ],
+      "usability": [
+        "The user mentions advertisements.",
+        "The user mentions the layout of the app.",
+        "The user mentions playback controls.",
+        "The user mentions managing playlists."
+      ],
+      "playback": [
+        "The user mentions a playback failure.",
+        "The user mentions the app crashing.",
+        "The user mentions audio quality.",
+        "The user mentions a connection failure."
+      ],
+      "downloads": [
+        "The user mentions downloading music.",
+        "The user mentions offline listening."
+      ],
+      "catalog": [
+        "The user mentions missing songs.",
+        "The user mentions searching for music.",
+        "The user mentions music recommendations.",
+        "The user mentions song lyrics."
+      ],
+      "billing": [
+        "The user mentions being forced to pay for premium features.",
+        "The user mentions subscription prices.",
+        "The user mentions a payment problem.",
+        "The user mentions premium failing to activate."
+      ],
+      "support": [
+        "The user mentions contacting customer support."
+      ],
+      "other": [
+        "This text is general feedback about the app."
+      ]
+    },
+    "intent": {
+      "cancellation": "This person wants to stop using the app or cancel their subscription.",
+      "complaint": "This text expresses a negative experience or criticism.",
+      "request": "This text requests a new feature or an improvement.",
+      "praise": "This text expresses a positive opinion.",
+      "unclear": "This text is unrelated to using the app."
+    },
+    "severity": {
+      "1": "There is no reported problem: the text is praise, neutral, unclear, or only a feature request.",
+      "2": "The user reports dislike or annoyance but does not report losing any functionality.",
+      "3": "The user reports that some app features are restricted or not working properly.",
+      "4": "The user is unable to use the app at all.",
+      "5": [
+        "The user reports that money was stolen from their account.",
+        "The user reports that their private information was exposed.",
+        "The user reports that their personal data was permanently lost."
+      ]
+    },
+    "sentiment": {
+      "negative": "The user expresses a negative opinion.",
+      "neutral": "The user expresses a neutral opinion.",
+      "positive": "The user expresses a positive opinion."
+    }
+  },
+  "topic_evidence": {
+    "access": "\\b(log.?in|sign.?in|sign.?up|password|account|otp|verification)\\b",
+    "usability": "\\b(ads?|advert\\w*|layout|interface|home.?screen|screen|queue|playlist\\w*|shuffle|skip\\w*|repeat|rewind|button\\w*|ui|ux|navigation|controls?)\\b",
+    "playback": "\\b(playback|crash\\w*|buffer\\w*|lag\\w*|connect\\w*|sound|audio|wifi|wi-fi|internet|stops?|paus\\w*|volume|battery)\\b",
+    "downloads": "\\b(download\\w*|offline|saved)\\b",
+    "catalog": "\\b(missing|search\\w*|recommend\\w*|lyrics?|catalog\\w*|collections?)\\b",
+    "billing": "\\b(premium|subscri\\w*|pay\\w*|price\\w*|charg\\w*|refund\\w*|money|paid|expensive)\\b",
+    "support": "customer (support|service)|support team|contact\\w*.*support"
+  },
+  "config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36"
+}

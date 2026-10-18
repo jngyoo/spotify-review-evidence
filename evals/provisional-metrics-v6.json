@@ -1,0 +1,84 @@
+{
+  "reference_kind": "provisional",
+  "human_label_requirement_complete": false,
+  "n": 50,
+  "valid_predictions": 50,
+  "missing_or_invalid": 0,
+  "agreement": {
+    "topic": 0.78,
+    "intent": 0.84,
+    "severity": 0.8,
+    "needs_review": 0.32
+  },
+  "severity_mae_valid_only": 0.28,
+  "sentiment_mae_valid_only": 0.24598221999999997,
+  "quote_exact_fraction": 1.0,
+  "topic_confusion": [
+    {
+      "expected": "billing",
+      "predicted": "billing",
+      "count": 3
+    },
+    {
+      "expected": "catalog",
+      "predicted": "catalog",
+      "count": 1
+    },
+    {
+      "expected": "catalog",
+      "predicted": "other",
+      "count": 4
+    },
+    {
+      "expected": "catalog",
+      "predicted": "usability",
+      "count": 2
+    },
+    {
+      "expected": "downloads",
+      "predicted": "billing",
+      "count": 1
+    },
+    {
+      "expected": "other",
+      "predicted": "other",
+      "count": 26
+    },
+    {
+      "expected": "playback",
+      "predicted": "other",
+      "count": 1
+    },
+    {
+      "expected": "playback",
+      "predicted": "playback",
+      "count": 3
+    },
+    {
+      "expected": "usability",
+      "predicted": "billing",
+      "count": 1
+    },
+    {
+      "expected": "usability",
+      "predicted": "catalog",
+      "count": 1
+    },
+    {
+      "expected": "usability",
+      "predicted": "other",
+      "count": 1
+    },
+    {
+      "expected": "usability",
+      "predicted": "usability",
+      "count": 6
+    }
+  ],
+  "ambiguous_reference_count": 20,
+  "limitations": [
+    "Small diagnostic sample, not population accuracy.",
+    "Provisional references do not satisfy the human-label requirement.",
+    "Entities and whether quotes substantively support labels need inspection."
+  ]
+}

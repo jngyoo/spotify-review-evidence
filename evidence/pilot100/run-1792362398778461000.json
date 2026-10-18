@@ -1,0 +1,16 @@
+{
+  "newly_attempted": 95,
+  "exact_text_cache_hits": 0,
+  "wall_seconds": 43.29299641700345,
+  "completed": 100,
+  "source": 100,
+  "new_calls": 23,
+  "workers": 1,
+  "batch_size": 5,
+  "output_cap": 2048,
+  "verification_sample": 10,
+  "api_cost_usd": 0,
+  "local_compute_cost_usd": null,
+  "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+  "phase": "resume"
+}

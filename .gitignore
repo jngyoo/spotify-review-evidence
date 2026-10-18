@@ -1,0 +1,9 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.sqlite*
+data/*.csv
+runs/
+model-cache/
+.venv/

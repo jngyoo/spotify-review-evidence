@@ -1,0 +1,12 @@
+{
+  "cold_wall_seconds": 51.83693370799301,
+  "warm_wall_seconds": 7.503229250010918,
+  "exit_codes": [
+    -2,
+    0,
+    0
+  ],
+  "interruption": "SIGINT after first committed batch; actual captured stdout/stderr",
+  "api_cost_usd": 0,
+  "local_compute_cost_usd": null
+}

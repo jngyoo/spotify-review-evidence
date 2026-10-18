@@ -1,0 +1,11 @@
+{
+  "expected_completed": 500,
+  "counts": {
+    "completed": 500
+  },
+  "verifier_disagreements": 21,
+  "verification_sample": 50,
+  "disagreement_fraction": 0.42,
+  "threshold": 0.5,
+  "note": "Operational gate only; model agreement is not ground truth."
+}

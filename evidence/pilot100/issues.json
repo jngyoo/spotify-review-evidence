@@ -1,0 +1,39 @@
+{
+  "issues": [
+    {
+      "description": "General complaints or unspecified issues.",
+      "issue_id": "ISSUE-other",
+      "name": "Other Issues"
+    },
+    {
+      "description": "Problems with the app's interface, features, or user experience.",
+      "issue_id": "ISSUE-usability",
+      "name": "Usability Issues"
+    },
+    {
+      "description": "Problems related to payments, subscriptions, or premium features.",
+      "issue_id": "ISSUE-billing",
+      "name": "Billing Issues"
+    },
+    {
+      "description": "Problems related to music playback, skipping, stopping, or audio functionality.",
+      "issue_id": "ISSUE-playback",
+      "name": "Playback Issues"
+    },
+    {
+      "description": "Problems related to downloading content or background processes.",
+      "issue_id": "ISSUE-downloads",
+      "name": "Download Issues"
+    },
+    {
+      "description": "Problems related to logging in, account access, or advertisements.",
+      "issue_id": "ISSUE-access",
+      "name": "Access Issues"
+    },
+    {
+      "description": "Problems related to viewing or displaying content like lyrics or music listings.",
+      "issue_id": "ISSUE-catalog",
+      "name": "Catalog Issues"
+    }
+  ]
+}

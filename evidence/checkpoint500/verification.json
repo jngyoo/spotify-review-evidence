@@ -1,0 +1,1315 @@
+{
+  "seed": 20261018,
+  "sample_size": 50,
+  "method": "random sample; verifier sees original text and rubric only; separate prompt",
+  "enrichment_model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+  "verification_model": "gemma4:e2b",
+  "comparisons": [
+    {
+      "review_id": "e0127547-4edd-44a0-8d5e-e8398bc07086",
+      "first": {
+        "entities": [],
+        "evidence_quote": "sometime the lyrics don't show",
+        "intent": "complaint",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": false,
+        "review_id": "e0127547-4edd-44a0-8d5e-e8398bc07086",
+        "sentiment": -0.004196,
+        "severity": 2,
+        "source_sha256": "e539646f0b856efd05fc39567edf77d41bd13651fad1a6e6faff609a34209f2b",
+        "status": "completed",
+        "topic": "catalog"
+      },
+      "independent": {
+        "intent": "unclear",
+        "needs_review": true,
+        "review_id": "e0127547-4edd-44a0-8d5e-e8398bc07086",
+        "sentiment": 0,
+        "severity": 1,
+        "topic": "catalog"
+      },
+      "disagreements": [
+        "intent",
+        "severity"
+      ]
+    },
+    {
+      "review_id": "cd1d1b59-9de2-4181-bf4c-635a5d5f8e1e",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Its Alright but i did find a cougar",
+        "intent": "unclear",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "cd1d1b59-9de2-4181-bf4c-635a5d5f8e1e",
+        "sentiment": 0.0793,
+        "severity": 1,
+        "source_sha256": "cfde52a56df3a323776a606a1bf6fde76ded17b40e9d6dadb0e473cef174cf69",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "cd1d1b59-9de2-4181-bf4c-635a5d5f8e1e",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "catalog"
+      },
+      "disagreements": [
+        "topic",
+        "intent"
+      ]
+    },
+    {
+      "review_id": "33526c6f-7a49-4b3d-bd20-d1bc191c494c",
+      "first": {
+        "entities": [],
+        "evidence_quote": "RUDE APP , THIS APP SUPPORT GUYS 🤮🤮🤮🤮🤮🤮🤮🤮🤮🤮. تطبيق سيء ، بدعم المثليين 🤮🤮🤮",
+        "intent": "complaint",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "33526c6f-7a49-4b3d-bd20-d1bc191c494c",
+        "sentiment": -0.99766,
+        "severity": 2,
+        "source_sha256": "f8d5bd72b89a833c8e5f2fb7da2f97bf50863b698139a0676893d3a8a6cb4b0e",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "complaint",
+        "needs_review": false,
+        "review_id": "33526c6f-7a49-4b3d-bd20-d1bc191c494c",
+        "sentiment": -1,
+        "severity": 2,
+        "topic": "other"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "55bc2f5d-0157-467b-8f5c-2f9c7d1b0c04",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Roasted app",
+        "intent": "praise",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "55bc2f5d-0157-467b-8f5c-2f9c7d1b0c04",
+        "sentiment": 0.989967,
+        "severity": 1,
+        "source_sha256": "48bfcb62f3f2f4454c5a8e92fb89f47ce876868e80c0f0e678f13f4a74dac70d",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "55bc2f5d-0157-467b-8f5c-2f9c7d1b0c04",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "cc915d09-97ce-4d74-a04e-77d8f2d00e85",
+      "first": {
+        "entities": [],
+        "evidence_quote": "I love it lots of music that you want to hear. Saving your music is easy. It's been a blessing for me and family and friends. 💕🔥❤️",
+        "intent": "praise",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "cc915d09-97ce-4d74-a04e-77d8f2d00e85",
+        "sentiment": 0.999801,
+        "severity": 1,
+        "source_sha256": "4968ae9b2ec9d8eba525d9ebb99ed0aad891f9855fb122a059f05b5c7a291b97",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "cc915d09-97ce-4d74-a04e-77d8f2d00e85",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "usability"
+      },
+      "disagreements": [
+        "topic"
+      ]
+    },
+    {
+      "review_id": "0be20402-efaf-482f-9635-78f166bcf538",
+      "first": {
+        "entities": [],
+        "evidence_quote": "ممتاز",
+        "intent": "praise",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "0be20402-efaf-482f-9635-78f166bcf538",
+        "sentiment": 0.996026,
+        "severity": 1,
+        "source_sha256": "d2f80e5bb917d60bb1e3b1d31f16644c7985df7c9f673e5b32b5e27a0030a363",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "0be20402-efaf-482f-9635-78f166bcf538",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "e09a9cf4-7ab2-49fb-b3f9-543ab70d6aec",
+      "first": {
+        "entities": [],
+        "evidence_quote": "👎👎👎👎",
+        "intent": "complaint",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "e09a9cf4-7ab2-49fb-b3f9-543ab70d6aec",
+        "sentiment": -0.998728,
+        "severity": 2,
+        "source_sha256": "bd676130f67a8964a58682fd8f20b57367f280814070b1136ed5a2db4d197222",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "complaint",
+        "needs_review": false,
+        "review_id": "e09a9cf4-7ab2-49fb-b3f9-543ab70d6aec",
+        "sentiment": -1,
+        "severity": 2,
+        "topic": "other"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "77a53aa5-a453-4bcb-8267-d4f44a492dd3",
+      "first": {
+        "entities": [],
+        "evidence_quote": "I can give only 1stare because the Spotify app not allow to skip the music after update and not play a single song and remove the repeat option please Spotify give back this many options i shall request you.....!",
+        "intent": "complaint",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": false,
+        "review_id": "77a53aa5-a453-4bcb-8267-d4f44a492dd3",
+        "sentiment": -0.990453,
+        "severity": 3,
+        "source_sha256": "6f595bb082c5d32884b6795bcd44df649f272dfabd2fba62e294948b0e43bd1d",
+        "status": "completed",
+        "topic": "usability"
+      },
+      "independent": {
+        "intent": "complaint",
+        "needs_review": true,
+        "review_id": "77a53aa5-a453-4bcb-8267-d4f44a492dd3",
+        "sentiment": -1,
+        "severity": 3,
+        "topic": "usability"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "80e2b39e-11a5-485a-aace-8a8d8c564dc1",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Great except for the comercials",
+        "intent": "praise",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": false,
+        "review_id": "80e2b39e-11a5-485a-aace-8a8d8c564dc1",
+        "sentiment": 0.518013,
+        "severity": 1,
+        "source_sha256": "22a43ab133e9bc6b8dd5cede0a06649437615a116e8ba5d656c6ba7a737932ea",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "complaint",
+        "needs_review": false,
+        "review_id": "80e2b39e-11a5-485a-aace-8a8d8c564dc1",
+        "sentiment": -1,
+        "severity": 2,
+        "topic": "usability"
+      },
+      "disagreements": [
+        "topic",
+        "intent",
+        "severity"
+      ]
+    },
+    {
+      "review_id": "f7cc1aa7-c306-4f5b-a5e9-911cca07fa60",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Hate this application 😡😡😡bakwas",
+        "intent": "complaint",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "f7cc1aa7-c306-4f5b-a5e9-911cca07fa60",
+        "sentiment": -0.999566,
+        "severity": 2,
+        "source_sha256": "566712edaae6b1dc1410a4c7155185522274fc4f558e16dc072eeb388da7e212",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "complaint",
+        "needs_review": false,
+        "review_id": "f7cc1aa7-c306-4f5b-a5e9-911cca07fa60",
+        "sentiment": -1,
+        "severity": 2,
+        "topic": "other"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "8b47c5d7-d31c-4aae-b00d-d62217ae55fc",
+      "first": {
+        "entities": [],
+        "evidence_quote": "i really like it. thanks Spotify Music, for reminding me my youth time.. more power",
+        "intent": "praise",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "8b47c5d7-d31c-4aae-b00d-d62217ae55fc",
+        "sentiment": 0.998707,
+        "severity": 1,
+        "source_sha256": "f70e99f1f19f94bd099bbb949d70614e01c89235d55e972389b2997803397bf1",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "8b47c5d7-d31c-4aae-b00d-d62217ae55fc",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "d0150464-7f34-43b2-b729-bbbc5354db7e",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Verrrryyyy gud man I lobe this app",
+        "intent": "praise",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "d0150464-7f34-43b2-b729-bbbc5354db7e",
+        "sentiment": 0.999389,
+        "severity": 1,
+        "source_sha256": "cd429406eaeb9cbe0f3f9a5ab57ab9d4fa844d33040333d5db628134866b6f83",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "d0150464-7f34-43b2-b729-bbbc5354db7e",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "179d79f7-d052-490f-a9d6-f97525b32642",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Love Spotify, but since I got my new phone, it keeps randomly stopping, like it would with no Internet, but I have full bars.",
+        "intent": "complaint",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": false,
+        "review_id": "179d79f7-d052-490f-a9d6-f97525b32642",
+        "sentiment": 0.532994,
+        "severity": 2,
+        "source_sha256": "53ebe11bc564b5f79c125c17d547351ce9cc909276f259cf9e5de4f2052c6fba",
+        "status": "completed",
+        "topic": "playback"
+      },
+      "independent": {
+        "intent": "complaint",
+        "needs_review": false,
+        "review_id": "179d79f7-d052-490f-a9d6-f97525b32642",
+        "sentiment": -1,
+        "severity": 3,
+        "topic": "playback"
+      },
+      "disagreements": [
+        "severity"
+      ]
+    },
+    {
+      "review_id": "db98b02f-8a79-4b0c-af77-439171a20781",
+      "first": {
+        "entities": [],
+        "evidence_quote": "This is such an amazing app.. Absolutely convenient and easy to use with great features.✨",
+        "intent": "praise",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "db98b02f-8a79-4b0c-af77-439171a20781",
+        "sentiment": 0.999704,
+        "severity": 1,
+        "source_sha256": "a580b0d79cfbbc177fd692f215add5f999740878e22597f36b88dc1fcd043ed7",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "db98b02f-8a79-4b0c-af77-439171a20781",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "usability"
+      },
+      "disagreements": [
+        "topic"
+      ]
+    },
+    {
+      "review_id": "3a21c4bf-5ff5-42ea-8762-a54e7fe35a6b",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Ten years of pleasure",
+        "intent": "praise",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "3a21c4bf-5ff5-42ea-8762-a54e7fe35a6b",
+        "sentiment": 0.983875,
+        "severity": 1,
+        "source_sha256": "9943da05b1ec4f6bf590691489999dcc35477c91e1fe62a72b6ba1b94da46d5c",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "unclear",
+        "needs_review": true,
+        "review_id": "3a21c4bf-5ff5-42ea-8762-a54e7fe35a6b",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "disagreements": [
+        "intent"
+      ]
+    },
+    {
+      "review_id": "e3238297-f942-4c8e-96f7-b951b461e707",
+      "first": {
+        "entities": [],
+        "evidence_quote": "This music app is the only one I'll ever use,it's great and always the best experience listening to music on the net.I love it😎💯❤❤❤❤",
+        "intent": "praise",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "e3238297-f942-4c8e-96f7-b951b461e707",
+        "sentiment": 0.999279,
+        "severity": 1,
+        "source_sha256": "6a434283239a1450f9e59228e86157ea9745eececdd7621dfec1c8d03915428a",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "e3238297-f942-4c8e-96f7-b951b461e707",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "0b52ac4e-1982-46ed-aeaa-74eedaefb5c9",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Sexy app",
+        "intent": "unclear",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "0b52ac4e-1982-46ed-aeaa-74eedaefb5c9",
+        "sentiment": 0.709418,
+        "severity": 1,
+        "source_sha256": "8daf455fd2e1343c420cb8f9ae8be87738547fdf90686dd98c4c806ee5bd2196",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "unclear",
+        "needs_review": true,
+        "review_id": "0b52ac4e-1982-46ed-aeaa-74eedaefb5c9",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "9ec495c3-d57d-47dd-b08d-834557b12117",
+      "first": {
+        "cache_source_id": "dc73ecd9-3293-4ede-90d5-dd6cd1e8d087",
+        "entities": [],
+        "evidence_quote": "Great",
+        "intent": "praise",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "9ec495c3-d57d-47dd-b08d-834557b12117",
+        "sentiment": 0.999446,
+        "severity": 1,
+        "source_sha256": "68bc2339e1380d730b16f2f4edc20526cbe519cc91b6b1e2b801fc3c30514dde",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "9ec495c3-d57d-47dd-b08d-834557b12117",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "475aa270-a637-4332-ba8d-48def4869f98",
+      "first": {
+        "entities": [],
+        "evidence_quote": "I enjoy it",
+        "intent": "praise",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "475aa270-a637-4332-ba8d-48def4869f98",
+        "sentiment": 0.996982,
+        "severity": 1,
+        "source_sha256": "63ae1d7451fbbaa8c5792fabbaff4fe003b0ef37d4297e29e8bb9289eafc81bd",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "475aa270-a637-4332-ba8d-48def4869f98",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "42f0c9d1-088c-437b-bfc8-c1c36114a8f0",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Fantastic experience",
+        "intent": "praise",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "42f0c9d1-088c-437b-bfc8-c1c36114a8f0",
+        "sentiment": 0.999696,
+        "severity": 1,
+        "source_sha256": "b18641e425e04c8aeb3ac49b4d9abf1096946405488d88fed10ea854ff24531e",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "42f0c9d1-088c-437b-bfc8-c1c36114a8f0",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "90c663e4-4362-4929-b4a8-098db44c2cc6",
+      "first": {
+        "cache_source_id": "4aee0d75-6901-426e-b0f7-11d042ccc73e",
+        "entities": [],
+        "evidence_quote": "Good",
+        "intent": "praise",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "90c663e4-4362-4929-b4a8-098db44c2cc6",
+        "sentiment": 0.998582,
+        "severity": 1,
+        "source_sha256": "5e8f67a9728f54eb18e77c6d4b516ac3da480c9b4801566ec6a1a0a732626d85",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "90c663e4-4362-4929-b4a8-098db44c2cc6",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "ded4a70e-60b2-4d61-8fae-2e3270571a4b",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Would be nice if there was a sort of in built shazam. Spotify feels too advanced to not have that thank you. Also add a translation to lyrics/allow users to interact with the lyrics if it's in their language so they can help translate (RE: Deezer mobile app)",
+        "intent": "request",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": false,
+        "review_id": "ded4a70e-60b2-4d61-8fae-2e3270571a4b",
+        "sentiment": 0.533922,
+        "severity": 1,
+        "source_sha256": "17204ca8dec80db7c1ef06140252771f6e50172b54c2860d8bbc6aeeaadad11c",
+        "status": "completed",
+        "topic": "catalog"
+      },
+      "independent": {
+        "intent": "request",
+        "needs_review": true,
+        "review_id": "ded4a70e-60b2-4d61-8fae-2e3270571a4b",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "catalog"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "ee3e2bd4-f94d-4e76-b2a6-5f6533d74c7c",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Best music app ever",
+        "intent": "praise",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "ee3e2bd4-f94d-4e76-b2a6-5f6533d74c7c",
+        "sentiment": 0.999543,
+        "severity": 1,
+        "source_sha256": "5684cfef4f255e754b231770307711ae58179a9c5e7e4f43da6e72c6eb7cdc03",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "ee3e2bd4-f94d-4e76-b2a6-5f6533d74c7c",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "2e2480c1-7799-4a66-be67-a947a2d99680",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Ahhhhhh why change the layout. If it aint broke... Don't fix it. The new layout is horrible, takes ages tk find things and is just plain annoying. Sack your deaign team because they are clueless.",
+        "intent": "complaint",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": false,
+        "review_id": "2e2480c1-7799-4a66-be67-a947a2d99680",
+        "sentiment": -0.999615,
+        "severity": 2,
+        "source_sha256": "ea46ee8d491cb6f189229b94549584b63ce40b99b4db2a4dc0132949e4747a18",
+        "status": "completed",
+        "topic": "usability"
+      },
+      "independent": {
+        "intent": "complaint",
+        "needs_review": false,
+        "review_id": "2e2480c1-7799-4a66-be67-a947a2d99680",
+        "sentiment": -1,
+        "severity": 2,
+        "topic": "usability"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "bb77bfb2-6eb8-4c6c-88bb-491c7da75196",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Very bad",
+        "intent": "complaint",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "bb77bfb2-6eb8-4c6c-88bb-491c7da75196",
+        "sentiment": -0.99984,
+        "severity": 2,
+        "source_sha256": "af05a22dad538e30033ef82a1ecff56558016f4d5f2ce33b7d299d85f38af5c4",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "complaint",
+        "needs_review": false,
+        "review_id": "bb77bfb2-6eb8-4c6c-88bb-491c7da75196",
+        "sentiment": -1,
+        "severity": 2,
+        "topic": "other"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "89a8e180-7846-4421-a2b6-fa7787e9d0d2",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Too much restrictions",
+        "intent": "complaint",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "89a8e180-7846-4421-a2b6-fa7787e9d0d2",
+        "sentiment": -0.88671,
+        "severity": 3,
+        "source_sha256": "c8ae5cdcacaa47a219b21bd71d6314583f1276f97d7b1ed3dae9dff8f83d4a82",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "complaint",
+        "needs_review": false,
+        "review_id": "89a8e180-7846-4421-a2b6-fa7787e9d0d2",
+        "sentiment": -1,
+        "severity": 2,
+        "topic": "usability"
+      },
+      "disagreements": [
+        "topic",
+        "severity"
+      ]
+    },
+    {
+      "review_id": "824cc977-421c-4445-898f-663acfd131f1",
+      "first": {
+        "entities": [],
+        "evidence_quote": "😍🥂 Awesome",
+        "intent": "praise",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "824cc977-421c-4445-898f-663acfd131f1",
+        "sentiment": 0.999766,
+        "severity": 1,
+        "source_sha256": "2ff35c754ea3e700f6ca8473ea8a77f937676062dbf6a5cbe695e2e519bac96d",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "824cc977-421c-4445-898f-663acfd131f1",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "ee17dcd6-07c0-4441-8e64-e7ea57877c78",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Too much adds🙄🥲",
+        "intent": "complaint",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "ee17dcd6-07c0-4441-8e64-e7ea57877c78",
+        "sentiment": -0.995906,
+        "severity": 2,
+        "source_sha256": "7258bc9f9b5b37632eb689baefebd20873ad193a9cf7b11d032a6ecc63008f14",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "complaint",
+        "needs_review": false,
+        "review_id": "ee17dcd6-07c0-4441-8e64-e7ea57877c78",
+        "sentiment": -1,
+        "severity": 2,
+        "topic": "usability"
+      },
+      "disagreements": [
+        "topic"
+      ]
+    },
+    {
+      "review_id": "08d3a5a9-1ec1-4b10-a5c8-393da33843e1",
+      "first": {
+        "entities": [],
+        "evidence_quote": "For free subscription I find this to be a cancerous and even dangerous app while driving. Will try to make your life difficult finding your songs, esp. while on the go, e.g. will not let you go to any random song in a playlist while on mobile, except for the first few uses. For the paid plan, no such ugly surprises, just still not as easy to find your stuff as it should be.",
+        "intent": "complaint",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "08d3a5a9-1ec1-4b10-a5c8-393da33843e1",
+        "sentiment": -0.999605,
+        "severity": 2,
+        "source_sha256": "f3ab63e87b2c1fe4f91691331611cd2738086cbd3ec7793f37ae0da548b1cc8d",
+        "status": "completed",
+        "topic": "billing"
+      },
+      "independent": {
+        "intent": "complaint",
+        "needs_review": false,
+        "review_id": "08d3a5a9-1ec1-4b10-a5c8-393da33843e1",
+        "sentiment": -1,
+        "severity": 3,
+        "topic": "usability"
+      },
+      "disagreements": [
+        "topic",
+        "severity"
+      ]
+    },
+    {
+      "review_id": "3e8bdc92-4934-457e-85cc-8b9d14bf51c0",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Decent,just let me have a solid 4-5 songs without an ad bro, it's always every 1 or 2 song then instant ads, that's all thanks",
+        "intent": "unclear",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "3e8bdc92-4934-457e-85cc-8b9d14bf51c0",
+        "sentiment": 0.007297,
+        "severity": 1,
+        "source_sha256": "4e19ecb42c0430b730e1577b7352374576cad8eff92998439a5766363d3a41af",
+        "status": "completed",
+        "topic": "usability"
+      },
+      "independent": {
+        "intent": "request",
+        "needs_review": true,
+        "review_id": "3e8bdc92-4934-457e-85cc-8b9d14bf51c0",
+        "sentiment": -1,
+        "severity": 3,
+        "topic": "usability"
+      },
+      "disagreements": [
+        "intent",
+        "severity"
+      ]
+    },
+    {
+      "review_id": "d108ae38-c395-4789-9b6b-661d1efb60d7",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Take off Smart Shuffle Take that off now, it's so annoying",
+        "intent": "complaint",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": false,
+        "review_id": "d108ae38-c395-4789-9b6b-661d1efb60d7",
+        "sentiment": -0.999088,
+        "severity": 2,
+        "source_sha256": "8871668a8e6b825d948ba396643784b16210d10d810a70ede3583ec606a78ebc",
+        "status": "completed",
+        "topic": "usability"
+      },
+      "independent": {
+        "intent": "complaint",
+        "needs_review": false,
+        "review_id": "d108ae38-c395-4789-9b6b-661d1efb60d7",
+        "sentiment": -1,
+        "severity": 2,
+        "topic": "usability"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "1a7af7d7-f3db-4a08-a041-b2fa84f08379",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Excellent. Can't live without it",
+        "intent": "praise",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "1a7af7d7-f3db-4a08-a041-b2fa84f08379",
+        "sentiment": 0.999323,
+        "severity": 1,
+        "source_sha256": "23604f5a989ccc638c5e68e9d288407fdd57c640d7b5566ad55ff11e89dc2843",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "1a7af7d7-f3db-4a08-a041-b2fa84f08379",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "e81ef9d4-212d-47fc-b360-f9a1914f2bcf",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Stunning",
+        "intent": "praise",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "e81ef9d4-212d-47fc-b360-f9a1914f2bcf",
+        "sentiment": 0.999425,
+        "severity": 1,
+        "source_sha256": "b5b8bf50a62d928fe42507445cca682bc2119591b6ed060b995e04acab834c42",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "e81ef9d4-212d-47fc-b360-f9a1914f2bcf",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "a31fe34e-04ce-4375-8985-9a14db7fb11e",
+      "first": {
+        "entities": [],
+        "evidence_quote": "This a good app and I really enjoyed it since I downloaded this app that why 4 stars",
+        "intent": "praise",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": false,
+        "review_id": "a31fe34e-04ce-4375-8985-9a14db7fb11e",
+        "sentiment": 0.998992,
+        "severity": 1,
+        "source_sha256": "5f893ede802b4f33e30ee526b672768894ac05e10c3396c5e9811591fb284b6f",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "a31fe34e-04ce-4375-8985-9a14db7fb11e",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "16929558-ce1e-4b87-8738-a1de3f557f66",
+      "first": {
+        "entities": [],
+        "evidence_quote": "I paid my subscription and im still getting a pause subscription screen and can't access my music...... help me",
+        "intent": "complaint",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "16929558-ce1e-4b87-8738-a1de3f557f66",
+        "sentiment": -0.034106,
+        "severity": 3,
+        "source_sha256": "d5b748cfaf8d9d9980825fbcad7dfd54c1141185b60c59733b701ac81359b73c",
+        "status": "completed",
+        "topic": "billing"
+      },
+      "independent": {
+        "intent": "complaint",
+        "needs_review": true,
+        "review_id": "16929558-ce1e-4b87-8738-a1de3f557f66",
+        "sentiment": -1,
+        "severity": 4,
+        "topic": "playback"
+      },
+      "disagreements": [
+        "topic",
+        "severity"
+      ]
+    },
+    {
+      "review_id": "0e5a2a0d-7f67-48a5-9edd-27064f670656",
+      "first": {
+        "entities": [],
+        "evidence_quote": "I press a song but it automatically played another song out of nowhere most of the time..it's irritating",
+        "intent": "complaint",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "0e5a2a0d-7f67-48a5-9edd-27064f670656",
+        "sentiment": -0.996148,
+        "severity": 2,
+        "source_sha256": "5ba85fd863fae52182b46bd76d0ccbae09bfef3904171c56795e5b61ea1484cd",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "unclear",
+        "needs_review": true,
+        "review_id": "0e5a2a0d-7f67-48a5-9edd-27064f670656",
+        "sentiment": -1,
+        "severity": 2,
+        "topic": "playback"
+      },
+      "disagreements": [
+        "topic",
+        "intent"
+      ]
+    },
+    {
+      "review_id": "985ac1da-f3d0-4f91-86ed-74869212c8fb",
+      "first": {
+        "entities": [],
+        "evidence_quote": "loved it.",
+        "intent": "praise",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "985ac1da-f3d0-4f91-86ed-74869212c8fb",
+        "sentiment": 0.999706,
+        "severity": 1,
+        "source_sha256": "761ea817521c85e7f521b265cbde947c020ccbf47196e60e930d618bb1eaff17",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "985ac1da-f3d0-4f91-86ed-74869212c8fb",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "cf71ae94-ac5f-49e1-bf3b-363d272af12d",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Simple easy and literally every song at your finger tips, love it for out of signal areas as you have your play list offline. Lots of ebooks aswell as podcasts.",
+        "intent": "praise",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": false,
+        "review_id": "cf71ae94-ac5f-49e1-bf3b-363d272af12d",
+        "sentiment": 0.993839,
+        "severity": 1,
+        "source_sha256": "7c189ad82f4636e7cd1c3e98606b4a20804affd9bb583683b2a7339c5a113443",
+        "status": "completed",
+        "topic": "downloads"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "cf71ae94-ac5f-49e1-bf3b-363d272af12d",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "downloads"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "f1532a7d-a47c-40eb-b41f-da17a379f9fb",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Hateful app Waste of time",
+        "intent": "complaint",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "f1532a7d-a47c-40eb-b41f-da17a379f9fb",
+        "sentiment": -0.99909,
+        "severity": 2,
+        "source_sha256": "7560dbc75162629d89fcbc47e996ae12bc8913e33d9a5615ccccbb965a6d2364",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "unclear",
+        "needs_review": true,
+        "review_id": "f1532a7d-a47c-40eb-b41f-da17a379f9fb",
+        "sentiment": -1,
+        "severity": 2,
+        "topic": "other"
+      },
+      "disagreements": [
+        "intent"
+      ]
+    },
+    {
+      "review_id": "9d851b7f-a738-449b-a841-de8076f13276",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Great music",
+        "intent": "praise",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "9d851b7f-a738-449b-a841-de8076f13276",
+        "sentiment": 0.999589,
+        "severity": 1,
+        "source_sha256": "6a6919b0ae1658687d7a9404b483b3db9c995babf03424590ad29e4be0bc3f40",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "9d851b7f-a738-449b-a841-de8076f13276",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "catalog"
+      },
+      "disagreements": [
+        "topic"
+      ]
+    },
+    {
+      "review_id": "c1fe1a70-f5ec-4009-bad6-b75437ba1c0b",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Most fun i have had recently,where music is concerned.",
+        "intent": "praise",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "c1fe1a70-f5ec-4009-bad6-b75437ba1c0b",
+        "sentiment": 0.999459,
+        "severity": 1,
+        "source_sha256": "700feabcf6424b2e9a9ef9fb3083a8d4657895411d23e26db597b01935f64b77",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "c1fe1a70-f5ec-4009-bad6-b75437ba1c0b",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "playback"
+      },
+      "disagreements": [
+        "topic"
+      ]
+    },
+    {
+      "review_id": "d635d6c8-460e-452f-8d53-6cd1ea804e98",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Why are lyrics premium!? There is literally no need to keep lyrics premium I'm sorry Spotify 1 star from me. Very disappointed:(.",
+        "intent": "complaint",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "d635d6c8-460e-452f-8d53-6cd1ea804e98",
+        "sentiment": -0.99933,
+        "severity": 2,
+        "source_sha256": "c6a7257ffee5de310337d387ad06946ec5d2813aadec28bd1efc60038c15ad20",
+        "status": "completed",
+        "topic": "catalog"
+      },
+      "independent": {
+        "intent": "complaint",
+        "needs_review": false,
+        "review_id": "d635d6c8-460e-452f-8d53-6cd1ea804e98",
+        "sentiment": -1,
+        "severity": 2,
+        "topic": "billing"
+      },
+      "disagreements": [
+        "topic"
+      ]
+    },
+    {
+      "review_id": "384008ad-eb79-4525-a794-b0b67f7fb3f5",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Canvas not available after recent update, what's the point of having premium -______-",
+        "intent": "complaint",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": false,
+        "review_id": "384008ad-eb79-4525-a794-b0b67f7fb3f5",
+        "sentiment": -0.924055,
+        "severity": 3,
+        "source_sha256": "7e84b7e63bcaff3c2f1fd14659366bf5cb7cb7f61f90cb30e1b95f5aec286628",
+        "status": "completed",
+        "topic": "billing"
+      },
+      "independent": {
+        "intent": "complaint",
+        "needs_review": false,
+        "review_id": "384008ad-eb79-4525-a794-b0b67f7fb3f5",
+        "sentiment": -1,
+        "severity": 3,
+        "topic": "catalog"
+      },
+      "disagreements": [
+        "topic"
+      ]
+    },
+    {
+      "review_id": "8b6e028a-5f63-4011-9841-cbbade4830eb",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Very bad app",
+        "intent": "complaint",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "8b6e028a-5f63-4011-9841-cbbade4830eb",
+        "sentiment": -0.999763,
+        "severity": 2,
+        "source_sha256": "0a6c87d44978e5cab378aeab8515e7d198aeee9ea05c2ba9f8a485ca5b5885ad",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "complaint",
+        "needs_review": false,
+        "review_id": "8b6e028a-5f63-4011-9841-cbbade4830eb",
+        "sentiment": -1,
+        "severity": 2,
+        "topic": "other"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "802f3b48-4008-4261-938f-912a703a860d",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Now it's such a worse app , the new updation was just worse",
+        "intent": "complaint",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "802f3b48-4008-4261-938f-912a703a860d",
+        "sentiment": -0.999584,
+        "severity": 2,
+        "source_sha256": "2b62f24f1dd235a0b419059e836698660fe7d09792b70da508c63c3a6f99b333",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "complaint",
+        "needs_review": false,
+        "review_id": "802f3b48-4008-4261-938f-912a703a860d",
+        "sentiment": -1,
+        "severity": 2,
+        "topic": "other"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "e575daac-46ab-4da3-b9f5-723bf4000234",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Noiceee",
+        "intent": "complaint",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "e575daac-46ab-4da3-b9f5-723bf4000234",
+        "sentiment": -0.525796,
+        "severity": 2,
+        "source_sha256": "fd4f6b1c8b3b2e1886e4de72a71ed5c6a72ec9055f9a676b1fa20ca36c20ff5c",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "e575daac-46ab-4da3-b9f5-723bf4000234",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "disagreements": [
+        "intent",
+        "severity"
+      ]
+    },
+    {
+      "review_id": "bc554ce2-8461-46eb-954d-c81e5b388cf4",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Splendid thanks for the app Love it",
+        "intent": "praise",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "bc554ce2-8461-46eb-954d-c81e5b388cf4",
+        "sentiment": 0.999728,
+        "severity": 1,
+        "source_sha256": "199b20d80d0b22148cde91e9b7530d6619fb53024bab463e9bc1f3d6905868e1",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "bc554ce2-8461-46eb-954d-c81e5b388cf4",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "12efd15d-4d4f-4a71-8e71-69d03b6f983a",
+      "first": {
+        "entities": [],
+        "evidence_quote": "I can't login to the app, it keep saying that there's no internet connection, whereas everything else on my phone is connected to the internet.",
+        "intent": "complaint",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "12efd15d-4d4f-4a71-8e71-69d03b6f983a",
+        "sentiment": -0.726227,
+        "severity": 2,
+        "source_sha256": "d59d50703ce1d50bb2bb0452f3ddda6fa2985769ec92258516d343e8252f67bc",
+        "status": "completed",
+        "topic": "access"
+      },
+      "independent": {
+        "intent": "complaint",
+        "needs_review": false,
+        "review_id": "12efd15d-4d4f-4a71-8e71-69d03b6f983a",
+        "sentiment": -1,
+        "severity": 4,
+        "topic": "playback"
+      },
+      "disagreements": [
+        "topic",
+        "severity"
+      ]
+    },
+    {
+      "review_id": "ae2e8bbc-49a5-4e88-a9b3-0432f7405274",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Super all and nice all songs 😍I am daily use this app",
+        "intent": "praise",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "ae2e8bbc-49a5-4e88-a9b3-0432f7405274",
+        "sentiment": 0.999081,
+        "severity": 1,
+        "source_sha256": "fa0a0c14d608f09c0ef81a90e25066ad80322e635fa0989081534fa011db314c",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "ae2e8bbc-49a5-4e88-a9b3-0432f7405274",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "catalog"
+      },
+      "disagreements": [
+        "topic"
+      ]
+    },
+    {
+      "review_id": "e8aa5daf-2036-430c-a340-90d395c9e029",
+      "first": {
+        "cache_source_id": "051540ac-7d80-406a-aad4-87fbf9bb7ce7",
+        "entities": [],
+        "evidence_quote": "Awesome",
+        "intent": "praise",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "e8aa5daf-2036-430c-a340-90d395c9e029",
+        "sentiment": 0.999739,
+        "severity": 1,
+        "source_sha256": "3e65b393a9496985e97402b44c37a6af69a4768d1371a809d6e98e7d12791074",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "e8aa5daf-2036-430c-a340-90d395c9e029",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "disagreements": []
+    }
+  ]
+}

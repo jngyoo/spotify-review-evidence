@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.wrangler/
+.openai/
+.env*
+!.env.example
+.dev.vars

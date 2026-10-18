@@ -1,0 +1,11 @@
+{
+  "source_rows": 660622,
+  "unique_nonempty_texts": 484189,
+  "checksums": {
+    "spotify_reviews_18months.csv": true,
+    "checkpoint_500.csv": true,
+    "golden_50_to_label.csv": true,
+    "analysis_10000.csv": true,
+    "cost_100.csv": true
+  }
+}

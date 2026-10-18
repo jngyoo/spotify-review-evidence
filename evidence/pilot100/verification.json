@@ -1,0 +1,270 @@
+{
+  "seed": 20261018,
+  "sample_size": 10,
+  "method": "random sample; verifier sees original text and rubric only; separate prompt",
+  "enrichment_model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+  "verification_model": "gemma4:e2b",
+  "comparisons": [
+    {
+      "review_id": "46ff0c74-5e86-4e5b-b4cd-36201aab0f9e",
+      "first": {
+        "entities": [],
+        "evidence_quote": "I am unable to use my Google assistant on the app.it says playing your Spotify playlist but do not play the songs",
+        "intent": "complaint",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": false,
+        "review_id": "46ff0c74-5e86-4e5b-b4cd-36201aab0f9e",
+        "sentiment": -0.000846,
+        "severity": 3,
+        "source_sha256": "7406c16bdbf028736dd1681204f99a345f7e2c864fb808ebf17b0ba740ab3fee",
+        "status": "completed",
+        "topic": "usability"
+      },
+      "independent": {
+        "intent": "unclear",
+        "needs_review": true,
+        "review_id": "46ff0c74-5e86-4e5b-b4cd-36201aab0f9e",
+        "sentiment": -1,
+        "severity": 3,
+        "topic": "playback"
+      },
+      "disagreements": [
+        "topic",
+        "intent"
+      ]
+    },
+    {
+      "review_id": "7084ced1-0428-4093-9328-442f74719b4f",
+      "first": {
+        "entities": [],
+        "evidence_quote": "I am using Spotify from past two years From last update they removed basic features of music player",
+        "intent": "complaint",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "7084ced1-0428-4093-9328-442f74719b4f",
+        "sentiment": -0.014072,
+        "severity": 2,
+        "source_sha256": "ddaa2cf2070614a6f848936d0a8bcb8c55c55f1393467c4fcc7eb6b947cf1f57",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "complaint",
+        "needs_review": false,
+        "review_id": "7084ced1-0428-4093-9328-442f74719b4f",
+        "sentiment": -1,
+        "severity": 2,
+        "topic": "playback"
+      },
+      "disagreements": [
+        "topic"
+      ]
+    },
+    {
+      "review_id": "ff14ea84-fdec-4363-9b1b-a23dcab287c5",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Good at all",
+        "intent": "praise",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "ff14ea84-fdec-4363-9b1b-a23dcab287c5",
+        "sentiment": 0.443523,
+        "severity": 1,
+        "source_sha256": "f033fa2efe7fdc9e6eaad659671ce8e8d29e1cb0f9bc609e9a4c13ec466d3c3c",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "ff14ea84-fdec-4363-9b1b-a23dcab287c5",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "178c3b49-b689-4fe4-92a2-2257a58e6d95",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Worst app.",
+        "intent": "complaint",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "178c3b49-b689-4fe4-92a2-2257a58e6d95",
+        "sentiment": -0.99973,
+        "severity": 2,
+        "source_sha256": "f305a142b4c6a74df35040105a5a669d826547f635bd211ba819b82807143b0d",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "complaint",
+        "needs_review": false,
+        "review_id": "178c3b49-b689-4fe4-92a2-2257a58e6d95",
+        "sentiment": -1,
+        "severity": 2,
+        "topic": "other"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "94c9f2f9-36fa-4c11-936e-660514fe7a35",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Spotify is great, but the new homescreen update is horrible. You're not tiktok or Instagram. I don't want to scroll through 1 playlist or album or artist at a time.",
+        "intent": "complaint",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": false,
+        "review_id": "94c9f2f9-36fa-4c11-936e-660514fe7a35",
+        "sentiment": -0.993263,
+        "severity": 3,
+        "source_sha256": "5bca9a8090e7ed6f6a27050b22fe50fcea9ae6f4f4a85ba6cbd76040648cc67e",
+        "status": "completed",
+        "topic": "usability"
+      },
+      "independent": {
+        "intent": "complaint",
+        "needs_review": false,
+        "review_id": "94c9f2f9-36fa-4c11-936e-660514fe7a35",
+        "sentiment": -1,
+        "severity": 2,
+        "topic": "usability"
+      },
+      "disagreements": [
+        "severity"
+      ]
+    },
+    {
+      "review_id": "9f46904c-4ed3-4799-8949-379b949c7344",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Best indeeeeeeeed",
+        "intent": "unclear",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "9f46904c-4ed3-4799-8949-379b949c7344",
+        "sentiment": 0.208338,
+        "severity": 1,
+        "source_sha256": "398b97f3ad8791fc5362112f8fc1c308199cec105f08352af2dae3a2c883b748",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "9f46904c-4ed3-4799-8949-379b949c7344",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "disagreements": [
+        "intent"
+      ]
+    },
+    {
+      "review_id": "ab67a772-c3b7-42ba-9b80-8d21d3857018",
+      "first": {
+        "entities": [],
+        "evidence_quote": "The ads are so loud :'(",
+        "intent": "complaint",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": false,
+        "review_id": "ab67a772-c3b7-42ba-9b80-8d21d3857018",
+        "sentiment": -0.989772,
+        "severity": 2,
+        "source_sha256": "33bc13ddae66a68b092d0023536b8da942b5a0a4b24d396dc4082f416e08d040",
+        "status": "completed",
+        "topic": "usability"
+      },
+      "independent": {
+        "intent": "complaint",
+        "needs_review": false,
+        "review_id": "ab67a772-c3b7-42ba-9b80-8d21d3857018",
+        "sentiment": -1,
+        "severity": 2,
+        "topic": "usability"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "277c75cb-ec6a-4387-902d-eb721d038db6",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Amazing",
+        "intent": "praise",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "277c75cb-ec6a-4387-902d-eb721d038db6",
+        "sentiment": 0.999676,
+        "severity": 1,
+        "source_sha256": "5830e16b8763744736f11a3ea1c7c7f4291d4df6604a40589bcbbba68b02bbde",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "277c75cb-ec6a-4387-902d-eb721d038db6",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "other"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "4ab2089a-ffa8-49e7-a8a3-aeb583a96796",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Iam a premium user. But this app if i using wifi not able to connect Internet. But if using mobile data it will work. Some songs quality also very poor comparing to the YouTube music.",
+        "intent": "complaint",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": false,
+        "review_id": "4ab2089a-ffa8-49e7-a8a3-aeb583a96796",
+        "sentiment": -0.916194,
+        "severity": 3,
+        "source_sha256": "3c9f09012c406840a0af7e46c2060089c8e5a9b3ee4eddacaeaed5713a8d91ac",
+        "status": "completed",
+        "topic": "playback"
+      },
+      "independent": {
+        "intent": "complaint",
+        "needs_review": false,
+        "review_id": "4ab2089a-ffa8-49e7-a8a3-aeb583a96796",
+        "sentiment": -1,
+        "severity": 3,
+        "topic": "playback"
+      },
+      "disagreements": []
+    },
+    {
+      "review_id": "10f09c93-34ef-4a3b-8ee2-97d7c00d44e0",
+      "first": {
+        "entities": [],
+        "evidence_quote": "Love this i can choose from all the music that i enjoy",
+        "intent": "praise",
+        "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36",
+        "needs_review": true,
+        "review_id": "10f09c93-34ef-4a3b-8ee2-97d7c00d44e0",
+        "sentiment": 0.999471,
+        "severity": 1,
+        "source_sha256": "12f4644129425b146fe24e98c62d45599779ec1757aca2f1e5c58830ffbc5256",
+        "status": "completed",
+        "topic": "other"
+      },
+      "independent": {
+        "intent": "praise",
+        "needs_review": false,
+        "review_id": "10f09c93-34ef-4a3b-8ee2-97d7c00d44e0",
+        "sentiment": 1,
+        "severity": 1,
+        "topic": "catalog"
+      },
+      "disagreements": [
+        "topic"
+      ]
+    }
+  ]
+}

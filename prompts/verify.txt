@@ -1,0 +1,1 @@
+Act as an independent reviewer. You receive original reviews and the shared definitions, never the first model prediction. Reassess every label from original text. Be conservative about reported functional loss. Follow the shared definitions below.

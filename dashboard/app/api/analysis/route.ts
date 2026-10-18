@@ -1,0 +1,2 @@
+import {database,runId} from '../../../lib/results';
+export async function GET(){try{const db=await database();const row=await db.prepare('SELECT payload FROM analyses WHERE run_id=?').bind(runId).first<{payload:string}>();return Response.json(JSON.parse(row!.payload),{headers:{'Cache-Control':'no-store'}});}catch{ return Response.json({error:'Saved results are temporarily unavailable.'},{status:503});}}

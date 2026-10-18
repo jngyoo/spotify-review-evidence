@@ -1,0 +1,8 @@
+{
+  "pipeline.py": "005289ce8b648043fa57d79153e3ab6bd2cffffd88f7f5347682e6e1d9529eb2",
+  "nli_classifier.py": "80e8f8b69fd34d21cc6dd83da828e09d47fdd85e8b7ad70f423a39b42d7d0783",
+  "prompts/enrich.txt": "9b4d1672bf5f9e967084e3c809453d45013e2b66e9488378b5b47b3c08215f65",
+  "prompts/group.txt": "9448702bc3164ef34963ed2dba77e838fc4de87da545d55eabd2b127cb983efc",
+  "prompts/memo.txt": "8af6a4a0a1bebf2146f7e61fe485e7d4850b98ae37efc15f2d11e91eabe1236b",
+  "prompts/verify.txt": "9a7521f27219707ceb5bd83c96452d9ebc31e17c0e702558ad4dc8fb8993b718"
+}

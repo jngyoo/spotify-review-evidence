@@ -1,0 +1,39 @@
+{
+  "issues": [
+    {
+      "issue_id": "ISSUE-other",
+      "name": "General/Unspecified Issues",
+      "description": "General complaints or unspecified issues."
+    },
+    {
+      "issue_id": "ISSUE-usability",
+      "name": "Usability and Feature Experience",
+      "description": "Issues related to the app's usability, feature performance, and user experience."
+    },
+    {
+      "issue_id": "ISSUE-billing",
+      "name": "Subscription and Payment Issues",
+      "description": "Problems related to subscriptions, payment access, and premium features."
+    },
+    {
+      "issue_id": "ISSUE-playback",
+      "name": "Music Playback Issues",
+      "description": "Problems encountered while playing music, including glitches and functionality."
+    },
+    {
+      "issue_id": "ISSUE-catalog",
+      "name": "Content and Search Issues",
+      "description": "Problems related to the music catalog, search functionality, and content loading."
+    },
+    {
+      "issue_id": "ISSUE-downloads",
+      "name": "Download and Offline Functionality",
+      "description": "Issues related to downloading music and offline mode functionality."
+    },
+    {
+      "issue_id": "ISSUE-access",
+      "name": "Account Access and Login Issues",
+      "description": "Problems related to logging in, account access, and session management."
+    }
+  ]
+}

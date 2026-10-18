@@ -1,0 +1,10 @@
+model,category,usd_per_million,currency,checked_date,source
+gemma4:e2b,input,0,USD,2026-10-18,local-inference-no-provider-billing
+gemma4:e2b,cached_input,0,USD,2026-10-18,local-inference-no-provider-billing
+gemma4:e2b,output,0,USD,2026-10-18,local-inference-no-provider-billing
+MoritzLaurer/deberta-v3-xsmall-zeroshot-v1.1-all-33,input,0,USD,2026-10-18,https://huggingface.co/MoritzLaurer/deberta-v3-xsmall-zeroshot-v1.1-all-33
+MoritzLaurer/deberta-v3-xsmall-zeroshot-v1.1-all-33,cached_input,0,USD,2026-10-18,https://huggingface.co/MoritzLaurer/deberta-v3-xsmall-zeroshot-v1.1-all-33
+MoritzLaurer/deberta-v3-xsmall-zeroshot-v1.1-all-33,output,0,USD,2026-10-18,https://huggingface.co/MoritzLaurer/deberta-v3-xsmall-zeroshot-v1.1-all-33
+MoritzLaurer/deberta-v3-base-zeroshot-v2.0,input,0,USD,2026-10-18,https://huggingface.co/MoritzLaurer/deberta-v3-base-zeroshot-v2.0
+MoritzLaurer/deberta-v3-base-zeroshot-v2.0,cached_input,0,USD,2026-10-18,https://huggingface.co/MoritzLaurer/deberta-v3-base-zeroshot-v2.0
+MoritzLaurer/deberta-v3-base-zeroshot-v2.0,output,0,USD,2026-10-18,https://huggingface.co/MoritzLaurer/deberta-v3-base-zeroshot-v2.0

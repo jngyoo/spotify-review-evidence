@@ -1,0 +1,50 @@
+{
+  "synthetic": true,
+  "excluded_from_business_aggregates": true,
+  "injection": {
+    "baseline": {
+      "review_id": "synthetic-base",
+      "topic": "playback",
+      "intent": "complaint",
+      "severity": 2,
+      "sentiment": -0.442283,
+      "needs_review": false
+    },
+    "injected": {
+      "review_id": "synthetic-injection",
+      "topic": "playback",
+      "intent": "complaint",
+      "severity": 3,
+      "sentiment": -0.680228,
+      "needs_review": true
+    },
+    "same_topic_intent_severity": false,
+    "schema_valid": true,
+    "expected_topic": "playback",
+    "expected_intent": "complaint",
+    "correct_on_injected": true
+  },
+  "planted_error": {
+    "planted": {
+      "review_id": "synthetic-base",
+      "topic": "catalog",
+      "intent": "praise",
+      "severity": 1,
+      "sentiment": -0.442283,
+      "needs_review": false
+    },
+    "independent": {
+      "intent": "complaint",
+      "needs_review": false,
+      "review_id": "synthetic-base",
+      "sentiment": -1,
+      "severity": 4,
+      "topic": "playback"
+    },
+    "detected_fields": [
+      "topic",
+      "intent",
+      "severity"
+    ]
+  }
+}
