@@ -1,39 +1,39 @@
 {
   "issues": [
     {
+      "description": "General dissatisfaction or negative feedback regarding the product or service",
       "issue_id": "ISSUE-other",
-      "name": "General/Unspecified Issues",
-      "description": "General complaints or unspecified issues."
+      "name": "General Dissatisfaction"
     },
     {
+      "description": "Playlist playback failure requiring reinstallation",
       "issue_id": "ISSUE-usability",
-      "name": "Usability and Feature Experience",
-      "description": "Issues related to the app's usability, feature performance, and user experience."
+      "name": "Playlist Playback Failure"
     },
     {
+      "description": "Subscription access issues",
       "issue_id": "ISSUE-billing",
-      "name": "Subscription and Payment Issues",
-      "description": "Problems related to subscriptions, payment access, and premium features."
+      "name": "Subscription Access and Payment Issues"
     },
     {
+      "description": "App crashes or becomes unusable on iPads",
       "issue_id": "ISSUE-playback",
-      "name": "Music Playback Issues",
-      "description": "Problems encountered while playing music, including glitches and functionality."
+      "name": "App Instability/Crashing"
     },
     {
+      "description": "Lyrics not loading for songs in the playlist",
       "issue_id": "ISSUE-catalog",
-      "name": "Content and Search Issues",
-      "description": "Problems related to the music catalog, search functionality, and content loading."
+      "name": "Lyrics Loading Issue"
     },
     {
+      "description": "Application connectivity and login issues",
       "issue_id": "ISSUE-downloads",
-      "name": "Download and Offline Functionality",
-      "description": "Issues related to downloading music and offline mode functionality."
+      "name": "Connectivity and Login Problems"
     },
     {
+      "description": "Account login and access issues",
       "issue_id": "ISSUE-access",
-      "name": "Account Access and Login Issues",
-      "description": "Problems related to logging in, account access, and session management."
+      "name": "Account Access and Login Problems"
     }
   ]
 }

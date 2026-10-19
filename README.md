@@ -88,3 +88,14 @@ Selected execution evidence is under `runs/selected-v6/`. Earlier folders named 
 `prepare_dashboard.py` imports saved aggregate metrics and at most three exact evidence reviews per issue into the dashboard seed. The deployed backend stores and serves those metrics and evidence in its database. It does not pretend that the small evidence subset contains all classified reviews. Full grading exports remain separate.
 
 The public package excludes the 50 held-out review texts and provisional answer rows. Only aggregate provisional evaluation metrics are included. The displayed/saved original review excerpts come from the 500-row development subset. Synthetic test cases are separate.
+
+## Grouping recovery
+
+The 10,000-row classification finished, but a downstream group-name response changed issue IDs and failed validation. The corrected grouping step processes one schema-constrained ID per request. Existing classification results are reused; the NLI classifier and label configuration did not change. The source migration is documented in `evidence/downstream-migration.json`. Comparative recommendation wording is emitted only when saved metrics support it.
+
+To prepare the staged runner reference locally after extracting the course data:
+
+```sh
+python3 vendor/check_submission.py reference --full data/spotify_reviews_18months.csv --analysis data/cost_100.csv --out data/pilot-reference.json
+.venv/bin/python run_staged.py --data data --out runs/selected --pilot-reference data/pilot-reference.json --through full
+```

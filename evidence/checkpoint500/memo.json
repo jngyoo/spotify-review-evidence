@@ -1,5 +1,5 @@
 {
-  "recommendation": "Fix playback interruptions and failures. Prioritize ISSUE-playback based on higher severity.",
+  "recommendation": "Fix playback interruptions and failures. Prioritize ISSUE-playback as a candidate for further investigation.",
   "alternatives": "Compare this with ISSUE-access before allocating the next quarter of product effort.",
   "limitations": "Scope: 500 completed records from 500 loaded source records. Historical, self-selected reviews with coarse topic-level groups do not measure revenue, confirmed churn or causal retention effects. Human-reviewed label evaluation is not complete.",
   "citations": [
@@ -19,5 +19,6 @@
     "priority_issue": "ISSUE-playback",
     "reason": "higher_severity"
   },
+  "comparative_reason_supported": false,
   "rendering": "Model selects priorities from saved metrics; code renders wording, numbers and exact evidence references."
 }

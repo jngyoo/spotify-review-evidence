@@ -262,7 +262,16 @@ def downstream(db,model,args):
         entries=result['issues']
         if len(entries)!=len(analysis['ranking']) or {r['issue_id'] for r in entries}!={r['issue_id'] for r in analysis['ranking']}: raise ValueError('Group IDs changed')
         if not all(isinstance(r.get('name'),str) and isinstance(r.get('description'),str) for r in entries): raise ValueError('Missing issue names')
-    groups=model.call('group',group_input,[],check=check_group); save(args.out/'issues.json',groups)
+    groups={'issues':[]}
+    for issue in group_input['issues']:
+        item_schema={'type':'object','properties':{'issue_id':{'type':'string','enum':[issue['issue_id']]},'name':{'type':'string'},'description':{'type':'string'}},'required':['issue_id','name','description'],'additionalProperties':False}
+        group_schema={'type':'object','properties':{'issues':{'type':'array','items':item_schema,'minItems':1,'maxItems':1}},'required':['issues'],'additionalProperties':False}
+        def check_one(result):
+            if len(result.get('issues',[]))!=1 or result['issues'][0].get('issue_id')!=issue['issue_id']:raise ValueError('Group ID changed')
+            if not all(isinstance(result['issues'][0].get(k),str) and result['issues'][0][k].strip() for k in ('name','description')):raise ValueError('Missing group description')
+        answer=model.call('group',{'issues':[issue]},[],schema=group_schema,check=check_one)
+        groups['issues'].extend(answer['issues'])
+    check_group(groups);save(args.out/'issues.json',groups)
     issue_ids=[r['issue_id'] for r in analysis['ranking']]
     memo_schema={'type':'object','properties':{'priority_issue':{'type':'string','enum':issue_ids},'alternative_issue':{'type':'string','enum':issue_ids},'reason':{'type':'string','enum':['combined_frequency_and_severity','higher_severity','higher_frequency']}},'required':['priority_issue','alternative_issue','reason'],'additionalProperties':False}
     def check_memo(result):
@@ -274,7 +283,11 @@ def downstream(db,model,args):
     selection=model.call('memo',{'ranking':analysis['ranking'],'evidence':analysis['evidence'],'coverage':analysis['coverage']},[],schema=memo_schema,check=check_memo)
     priority=selection['priority_issue']; alternative=selection['alternative_issue']
     action={'playback':'Fix playback interruptions and failures','usability':'Reduce disruptive ads and simplify playback controls','billing':'Clarify paid feature access and resolve subscription problems','access':'Fix login and account access failures','downloads':'Restore reliable offline listening','catalog':'Improve content, search and discovery','support':'Improve support resolution','other':'Investigate the general dissatisfaction before choosing a specific fix'}
-    memo={'recommendation':action[priority.removeprefix('ISSUE-')]+'. Prioritize '+priority+' based on '+selection['reason'].replace('_',' ')+'.','alternatives':'Compare this with '+alternative+' before allocating the next quarter of product effort.','limitations':f"Scope: {analysis['coverage']['completed']:,} completed records from {analysis['coverage']['source']:,} loaded source records. Historical, self-selected reviews with coarse topic-level groups do not measure revenue, confirmed churn or causal retention effects. Human-reviewed label evaluation is not complete.",'citations':[{'issue_id':i,'claim_id':i+'-priority_score','review_id':analysis['evidence'][i][0]['review_id']} for i in dict.fromkeys([priority,alternative])],'model_selection':selection,'rendering':'Model selects priorities from saved metrics; code renders wording, numbers and exact evidence references.'}
+    p_rank=next(r for r in analysis['ranking'] if r['issue_id']==priority);a_rank=next(r for r in analysis['ranking'] if r['issue_id']==alternative)
+    metric={'combined_frequency_and_severity':'priority_score','higher_severity':'mean_severity','higher_frequency':'complaint_count'}[selection['reason']]
+    reason_supported=Decimal(str(p_rank[metric]))>Decimal(str(a_rank[metric]))
+    reasoning=(' based on '+selection['reason'].replace('_',' ')) if reason_supported else ' as a candidate for further investigation'
+    memo={'recommendation':action[priority.removeprefix('ISSUE-')]+'. Prioritize '+priority+reasoning+'.','alternatives':'Compare this with '+alternative+' before allocating the next quarter of product effort.','limitations':f"Scope: {analysis['coverage']['completed']:,} completed records from {analysis['coverage']['source']:,} loaded source records. Historical, self-selected reviews with coarse topic-level groups do not measure revenue, confirmed churn or causal retention effects. Human-reviewed label evaluation is not complete.",'citations':[{'issue_id':i,'claim_id':i+'-priority_score','review_id':analysis['evidence'][i][0]['review_id']} for i in dict.fromkeys([priority,alternative])],'model_selection':selection,'comparative_reason_supported':reason_supported,'rendering':'Model selects priorities from saved metrics; code renders wording, numbers and exact evidence references.'}
     save(args.out/'memo.json',memo)
     with db: db.execute('INSERT OR REPLACE INTO artifacts VALUES(?,?)',('recommendation',canonical(memo)))
     lines=['# Spotify product priority — measured run','',f"Scope: {analysis['coverage']}",'',memo['recommendation'],'',memo['alternatives'],'',memo['limitations'],'','## Saved evidence']

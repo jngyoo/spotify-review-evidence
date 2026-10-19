@@ -1,0 +1,8 @@
+{
+  "reason": "Bound each group naming request to one schema-constrained issue ID; validate comparative memo reason against saved metrics.",
+  "classification_config_unchanged": true,
+  "classification_source_changed": false,
+  "old_pipeline_sha256": "005289ce8b648043fa57d79153e3ab6bd2cffffd88f7f5347682e6e1d9529eb2",
+  "new_pipeline_sha256": "a0739c02c9e02898443adff1fef4569b3c3e502d5a03a5e4402266db95071fae",
+  "preserved": "Original pilot source fingerprints, calls, failed grouping attempts, and all saved labels."
+}

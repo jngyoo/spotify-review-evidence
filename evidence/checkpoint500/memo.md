@@ -2,7 +2,7 @@
 
 Scope: {'source': 500, 'completed': 500, 'quarantined': 0}
 
-Fix playback interruptions and failures. Prioritize ISSUE-playback based on higher severity.
+Fix playback interruptions and failures. Prioritize ISSUE-playback as a candidate for further investigation.
 
 Compare this with ISSUE-access before allocating the next quarter of product effort.
 
