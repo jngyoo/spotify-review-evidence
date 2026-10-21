@@ -5,6 +5,8 @@ p=argparse.ArgumentParser();p.add_argument('--run',type=Path,required=True);p.ad
 db=sqlite3.connect(a.run/'state.sqlite');analysis=json.loads(db.execute("select payload from artifacts where key='analysis'").fetchone()[0]);db.close()
 v=json.loads((a.run/'verification.json').read_text());memo=json.loads((a.run/'memo.json').read_text());experiment=json.loads((a.pilot/'experiment.json').read_text());ranking=analysis['ranking'];c=analysis['coverage'];d=sum(bool(x['disagreements']) for x in v['comparisons'])
 lines=['# Spotify review analysis','',f"This run classified {c['completed']:,} of {c['source']:,} loaded reviews. It retained {c['quarantined']:,} quarantined records. The complete source contains 660,622 reviews from May 2022 through November 2023.",'',memo['recommendation'],'',memo['alternatives'],'','## Results','', '| Rank | Issue | Complaints/cancellations | Mean severity | Priority score |','|---:|---|---:|---:|---:|']
+missing=c['source']-c['completed']-c['quarantined']
+if missing: lines[2] += f' This is a partial submission: {missing:,} nonempty reviews remain unclassified and are excluded from all rankings. The completed records are not a random sample; the missing portion may change the conclusion.'
 for r in ranking:lines.append(f"| {r['rank']} | {r['issue_id']} | {r['complaint_count']:,} | {r['mean_severity']} | {r['priority_score']:,} |")
 lines += ['', 'Each priority score is the sum of severity across complaint and cancellation records. This is equivalent to count multiplied by the unrounded mean severity. Praise and feature requests do not enter this ranking. Ties are resolved by issue ID. All issue-level numbers are exported in `grading/claims.csv`.', '', '## Evidence']
 for item in memo['citations']:

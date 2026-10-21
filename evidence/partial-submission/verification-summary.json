@@ -1,0 +1,5 @@
+{
+  "sample_size": 10,
+  "disagreements": 6,
+  "method": "random sample; verifier sees original text and rubric only; separate prompt"
+}

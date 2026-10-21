@@ -2,7 +2,7 @@
 
 This run classified 500 of 500 loaded reviews. It retained 0 quarantined records. The complete source contains 660,622 reviews from May 2022 through November 2023.
 
-Fix playback interruptions and failures. Prioritize ISSUE-playback based on higher severity.
+Fix playback interruptions and failures. Prioritize ISSUE-playback as a candidate for further investigation.
 
 Compare this with ISSUE-access before allocating the next quarter of product effort.
 

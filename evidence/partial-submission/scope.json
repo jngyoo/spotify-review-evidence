@@ -1,0 +1,11 @@
+{
+  "status": "partial_submission",
+  "reason": "User requested finalization before full completion",
+  "coverage": {
+    "completed": 476154,
+    "quarantined": 13,
+    "source": 660622,
+    "unprocessed": 184455
+  },
+  "label_config": "b26a0849981ba6c62d2a18c3da92cb934e6690ab040d71171f166abf895dae36"
+}
