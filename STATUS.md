@@ -9,4 +9,4 @@ Partial submission finalized at user request.
 - Full-corpus requirement: not met
 - Reference labels: provisional
 - Public review originals: 500-review checkpoint only
-- Dashboard viewer access: currently owner-private; grader access must be enabled separately.
+- Dashboard viewer access: public; anyone with the link can view.
