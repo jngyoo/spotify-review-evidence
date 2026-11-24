@@ -16,7 +16,7 @@ def calculate(calls,rates):
     return stages,missing
 
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--pilot',type=Path,default=Path(__file__).parent/'pilot');p.add_argument('--rates',type=Path,default=Path(__file__).parent/'rates.csv');p.add_argument('--rows',type=int,default=660622);p.add_argument('--unique',type=int,default=484189);p.add_argument('--nonempty',type=int,default=660609);p.add_argument('--budget',type=float,default=0);p.add_argument('--verification-rate',type=float,default=.01);p.add_argument('--rate-multiplier',type=float,default=1);p.add_argument('--out',type=Path,default=Path(__file__).parent/'report.json');a=p.parse_args()
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--pilot',type=Path,default=Path(__file__).resolve().parents[1]/'evidence'/'pilot100');p.add_argument('--rates',type=Path,default=Path(__file__).parent/'rates.csv');p.add_argument('--rows',type=int,default=660622);p.add_argument('--unique',type=int,default=484189);p.add_argument('--nonempty',type=int,default=660609);p.add_argument('--budget',type=float,default=0);p.add_argument('--verification-rate',type=float,default=.01);p.add_argument('--rate-multiplier',type=float,default=1);p.add_argument('--out',type=Path,default=Path(__file__).parent/'report.json');a=p.parse_args()
     if not 0<=a.verification_rate<=1 or not 0<=a.unique<=a.nonempty<=a.rows: p.error('invalid volumes or verification rate')
     rates={(r['model'],r['category']):float(r['usd_per_million'])/1000000*a.rate_multiplier for r in csv.DictReader(a.rates.open())}
     calls=[json.loads(x) for x in (a.pilot/'grading/calls.jsonl').read_text().splitlines()];records=[json.loads(x) for x in (a.pilot/'grading/records.jsonl').read_text().splitlines()]
